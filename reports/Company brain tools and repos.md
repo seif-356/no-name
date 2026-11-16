@@ -342,6 +342,31 @@ These are already set out in the starter stack and the PDPL section above. In sh
 
 Full tables: 128 entries in `local_models_hosting.md`, plus 118 in its cache.
 
+## Skills, MCP servers and developer tools
+
+- **Skills are a shared standard** ([agentskills.io](http://agentskills.io)) across Claude, Codex, Gemini CLI and Cursor.
+  - [anthropics/skills](https://github.com/anthropics/skills) has production docx, pdf, xlsx and pptx skills, plus `mcp-builder` for writing your own Odoo, Zoho or WhatsApp connectors.
+  - Google publishes official Workspace skills.
+  - [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector) scans community skills for risky instructions before you install them.
+  - Discovery lists: [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills), [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills), skills.sh.
+- **MCP servers:**
+  - The official [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) repo keeps only 7 reference servers.
+  - Registries hold far more: Glama (~99–121k), Smithery (26k+), PulseMCP (~21.7k), mcp.so (~20.5k), plus the official registry.
+  - Servers exist for WhatsApp (12; prefer the Business-API ones), Odoo (5), Excel, Microsoft 365 and Zoho Mail.
+  - **No Arabic NLP/OCR MCP server was found.** That is a gap you could fill.
+- **Gateways:**
+  - [Composio](https://composio.dev): 1,000+ toolkits; free tier of 100K calls a month.
+  - Pipedream: 3,000+ apps.
+  - Zapier MCP: 9,000+ apps; each call costs 2 tasks.
+  - Self-hosted options: [MetaMCP](https://github.com/metatool-ai/metamcp) and MCPJungle.
+- **Coding agents for a solo builder:**
+  - Claude Code led Terminal-Bench 4.0 at 64.8% (Oct 2026), ahead of Codex at 58.2%.
+  - Alternatives: opencode, Gemini CLI, Cline, Roo, Aider.
+- **Memory and context tools.** Star counts here come from community lists and are unverified:
+  - Mem0 (~66k), Graphiti/Zep (~31k; it tracks when each fact was true), Cognee (~31k), Letta (~25k).
+  - claude-mem (~82k), Spec Kit (~71k), Task Master (~25k).
+
+Full lists: about 250 entries in `skills_mcp_devtools.md`, plus about 520 in its cache.
 
 ## Agents and workflow automation (for the 30% custom work)
 
@@ -383,15 +408,17 @@ The report above covers the most useful items. Everything the research found is 
 | Open-source RAG repos | [open_source_rag_repos.md](../research_notes/Company%20brain%20tools%20and%20repos/open_source_rag_repos.md) | [cache](../research_notes/Company%20brain%20tools%20and%20repos/open_source_rag_repos_cache.md) | 406 / 1,183 |
 | Data cleanup, OCR, Arabic | [data_ingestion_cleanup.md](../research_notes/Company%20brain%20tools%20and%20repos/data_ingestion_cleanup.md) | [cache](../research_notes/Company%20brain%20tools%20and%20repos/data_ingestion_cleanup_cache.md) | 262 / 125 |
 | Local models and hosting | [local_models_hosting.md](../research_notes/Company%20brain%20tools%20and%20repos/local_models_hosting.md) | [cache](../research_notes/Company%20brain%20tools%20and%20repos/local_models_hosting_cache.md) | 142 / 107 |
+| Skills, MCP, dev tools | [skills_mcp_devtools.md](../research_notes/Company%20brain%20tools%20and%20repos/skills_mcp_devtools.md) | [cache](../research_notes/Company%20brain%20tools%20and%20repos/skills_mcp_devtools_cache.md) | 287 / 522 |
 | Agents and automation | [agents_automation.md](../research_notes/Company%20brain%20tools%20and%20repos/agents_automation.md) | [cache](../research_notes/Company%20brain%20tools%20and%20repos/agents_automation_cache.md) | 262 / 492 |
 | Reels and creators | [social_reels_creators.md](../research_notes/Company%20brain%20tools%20and%20repos/social_reels_creators.md) | [cache](../research_notes/Company%20brain%20tools%20and%20repos/social_reels_creators_cache.md) | 332 / 273 |
-| **Total** | | | **~3,850 unique links, including ~2,280 GitHub repos** |
+| **Total** | | | **~4,500 unique links, including ~2,950 GitHub repos** |
 
 ## Limitations
 
-- **The 10,000 target was not reached.** About 3,850 unique links remain after the skills and MCP lists were removed. Beyond that, the remaining results were mostly duplicates and near-empty repos.
+- **The 10,000 target was not reached.** About 4,500 unique links were collected. Beyond that, the remaining results were mostly duplicates and near-empty repos.
 - **Star counts are uneven.**
   - Open-source RAG repos, plus part of the answer-engine and agent tables, have star counts pulled live from the GitHub API on 15 Nov 2026.
+  - Skills, MCP and memory-tool counts come from community lists of unknown date. A few look inflated.
 - **Some entries come from background knowledge.** About a third to a half of the entries in the local-model, data-cleanup and products files are marked as such, not re-checked in 2026. Confirm licences and prices before quoting them to a client.
 - **The Arabic benchmarks are run by vendors.** Misraj built both the Misraj-DocOCR benchmark and Baseer, and TII built Falcon-OCR-Arabic. There is no independent Arabic OCR comparison yet.
 - **The PDPL reading is not legal advice.** Confirm the cross-border licensing implications with Egyptian counsel.
