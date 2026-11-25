@@ -9,6 +9,7 @@ A done-for-you service that cleans and organizes a small company's messy data (f
 | [analysis/01-market-and-swot.md](analysis/01-market-and-swot.md) | Red or blue ocean verdict, SWOT, first round of hard questions |
 | [analysis/02-competitors.md](analysis/02-competitors.md) | Competitors: who they serve, services, revenue, profit, valuation, client size and value |
 | [analysis/03-business-model-and-decisions.md](analysis/03-business-model-and-decisions.md) | Target segment, unit economics, 70/30 package model, Obsidian, decisions and open issues |
+| [CONVERSATION.md](CONVERSATION.md) | Full conversation log: every request, answer and decision, in order |
 | [reports/Company brain tools and repos.md](reports/Company%20brain%20tools%20and%20repos.md) | Deep research report: starter tech stack, Egypt data-protection (PDPL) angle, tool catalogue |
 | [research_notes/Company brain tools and repos/](research_notes/Company%20brain%20tools%20and%20repos/) | Full raw catalogues (~4,500 links): main files for strong entries, `_cache` files for weaker ones |
 
